@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+
+    <title>Split | Tip Calculator App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+
+        <img class="logo" src="/img/Split Logo.svg" alt="Split Logo">
+
+        <div class="main-card-div">
+            <div class="bill-div">
+                <label for="bill">Bill</label>
+                <div class="input-div">
+                    <img src="img/icon-dollar.svg" alt="dollar">
+                    <input type="text" id="bill" name="bill" value="0.00">    
+                </div>
+                
+            </div>
+            <div class="tip-options-main-div">
+                <h2 class="header">Select Tip %</h2>
+                <div class="tip-options-div">
+                    <div class="tip-option">
+                        <p class="tip-percentage-text" id="5-percent">
+                            5%
+                        </p>
+                    </div>
+                    <div class="tip-option">
+                        <p class="tip-percentage-text" id="10-percent">
+                            10%
+                        </p>
+                    </div>
+                    <div class="tip-option">
+                        <p class="tip-percentage-text" id="15-percent">
+                            15%
+                        </p>
+                    </div>
+                    <div class="tip-option">
+                        <p class="tip-percentage-text" id="20-percent">
+                            20%
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="num-people-main-div">
+                <label for="num-people"> Number of People</label>
+                <div class="input-div">
+                    <img src="img/icon-person.svg" alt="dollar">
+                    <input type="text" id="num-people" name="num-people" value="2">    
+                </div>
+                
+            </div>
+            <div class="results-main-div">
+                <div class="results-div">
+                    <div>
+                        <h2 class="result-h2">Tip Amount</h2>
+                        <p class="result-p">/ person</p>
+                    </div>
+                    
+                    <div class="result-number-div">
+                        <p class="result-number" id="tip-amount">$0.00</p>
+                    </div>
+                </div>
+                <div class="results-div">
+                    <div>
+                        <h2 class="result-h2">Total</h2>
+                        <p class="result-p">/ person</p>
+                    </div>
+                    
+                    <div class="result-number-div">
+                        <p class="result-number" id="tip-per-person">$0.00</p>
+                    </div>
+                    
+                </div>
+                <button>RESET</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
