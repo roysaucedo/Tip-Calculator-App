@@ -94,6 +94,7 @@ input {
     width: 100%;
     padding: 40px;
     border-radius: 20px 20px 0px 0px;
+    max-width: 1200px;
 }
 
 .bill-div {
@@ -189,3 +190,34 @@ button {
     color: #00474A;
     background-color: #26C2AD;
 }
+
+.responsive-div {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .main-card-div {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 40px;
+        border-radius: 20px;
+        max-width: 1200px;
+    }
+
+    .responsive-div {
+        display: flex;
+    }
+
+    .responsive-div>div {
+        width: 50%;
+    }
+
+    .results-main-div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+    }
+  }
