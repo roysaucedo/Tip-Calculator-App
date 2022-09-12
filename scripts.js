@@ -15,27 +15,36 @@ let displaySelectedTip = document.getElementById('display-selected-tip');
 
 function set5TipPercentage(){
     tipPercent = .05;
-    displaySelectedTip.style.display= 'block'
-    displaySelectedTip.textContent = 'You selected: 5% Tip'
+    tip5Selected.classList.add("selected-tip");
+    tip10Selected.classList.remove("selected-tip");
+    tip15Selected.classList.remove("selected-tip");
+    tip20Selected.classList.remove("selected-tip");
+    
     
 };
 
 function set10TipPercentage(){
     tipPercent = .10;
-    displaySelectedTip.style.display= 'block'
-    displaySelectedTip.textContent = 'You selected: 10% Tip'
+    tip10Selected.classList.add("selected-tip");
+    tip5Selected.classList.remove("selected-tip");
+    tip15Selected.classList.remove("selected-tip");
+    tip20Selected.classList.remove("selected-tip");
 };
 
 function set15TipPercentage(){
     tipPercent = .15;
-    displaySelectedTip.style.display= 'block'
-    displaySelectedTip.textContent = 'You selected: 15% Tip'
+    tip15Selected.classList.add("selected-tip");
+    tip10Selected.classList.remove("selected-tip");
+    tip5Selected.classList.remove("selected-tip");
+    tip20Selected.classList.remove("selected-tip");
 };
 
 function set20TipPercentage(){
     tipPercent = .2;
-    displaySelectedTip.style.display= 'block'
-    displaySelectedTip.textContent = 'You selected: 20% Tip'
+    tip20Selected.classList.add("selected-tip");
+    tip10Selected.classList.remove("selected-tip");
+    tip15Selected.classList.remove("selected-tip");
+    tip5Selected.classList.remove("selected-tip");
 };
 
 

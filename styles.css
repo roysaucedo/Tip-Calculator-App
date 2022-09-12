@@ -185,10 +185,7 @@ button {
     font-size: 18px;
 }
 
-.tip-selected {
-    padding:20px 0px;
-    display: none;
-    font-size: 14px;
-    text-decoration: underline;
-
+.selected-tip {
+    color: #00474A;
+    background-color: #26C2AD;
 }
