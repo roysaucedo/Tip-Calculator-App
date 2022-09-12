@@ -184,3 +184,11 @@ button {
     background-color: #26C2AD;
     font-size: 18px;
 }
+
+.tip-selected {
+    padding:20px 0px;
+    display: none;
+    font-size: 14px;
+    text-decoration: underline;
+
+}

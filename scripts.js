@@ -9,24 +9,33 @@ let tipPerPersonTotal = document.getElementById('tip-per-person');
 let calcBtn = document.getElementById('calc-btn');
 let tipPercent = 0;
 let calculatedTipAmount = 0;
+let displaySelectedTip = document.getElementById('display-selected-tip');
 
 
 
 function set5TipPercentage(){
     tipPercent = .05;
+    displaySelectedTip.style.display= 'block'
+    displaySelectedTip.textContent = 'You selected: 5% Tip'
     
 };
 
 function set10TipPercentage(){
     tipPercent = .10;
+    displaySelectedTip.style.display= 'block'
+    displaySelectedTip.textContent = 'You selected: 10% Tip'
 };
 
 function set15TipPercentage(){
     tipPercent = .15;
+    displaySelectedTip.style.display= 'block'
+    displaySelectedTip.textContent = 'You selected: 15% Tip'
 };
 
 function set20TipPercentage(){
     tipPercent = .2;
+    displaySelectedTip.style.display= 'block'
+    displaySelectedTip.textContent = 'You selected: 20% Tip'
 };
 
 
