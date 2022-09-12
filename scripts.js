@@ -13,6 +13,7 @@ let displaySelectedTip = document.getElementById('display-selected-tip');
 
 
 
+
 function set5TipPercentage(){
     tipPercent = .05;
     tip5Selected.classList.add("selected-tip");
@@ -51,15 +52,16 @@ function set20TipPercentage(){
 function calcTipAmount(){
     // Tip Amount Formula = Bill * Tip Percent
     calculatedTipAmount = billTotal.value * tipPercent;
-    tipAmountTotal.textContent = '$' + billTotal.value * tipPercent;
+    tipAmountTotal.textContent = '$' + Math.round((billTotal.value * tipPercent)*100)/100;
 };
 
 // Tip/Person Formula = Total Tip Amount / Num of People
 
 function calcTotalPerPerson(){
-    tipPerPersonTotal.textContent = '$' + calculatedTipAmount/peopleTotal.value;
-
+    // tipPerPersonTotal.textContent = '$' + calculatedTipAmount/peopleTotal.value;
+    tipPerPersonTotal.textContent = '$' + Math.round((calculatedTipAmount/peopleTotal.value)*100)/100;
 };
+
 
 calcBtn.addEventListener("click", calcTipAmount);
 calcBtn.addEventListener("click", calcTotalPerPerson);
