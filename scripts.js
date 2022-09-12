@@ -6,11 +6,29 @@ let tip20Selected = document.getElementById('10-percent');
 let peopleTotal = document.getElementById('num-people');
 let tipAmountTotal = document.getElementById('tip-amount');
 let tipPerPersonTotal = document.getElementById('tip-per-person');
+let calcBtn = document.getElementById('calc-btn');
+
 
 console.log(billTotal.value)
 
-// Formula = Bill 
+// Tip Amount Formula = Bill * Tip Percent
 
-function calcTip(){
-    
+
+
+function calcTipAmount(){
+    // let tipOutput = billTotal.value * 
+    let tipOutput = billTotal.value;
+
+    tipAmountTotal.textContent = '$' + tipOutput * ;
+
+    tipPerPersonTotal.textContent = '$' + tipOutput/peopleTotal.value;
 }
+
+// Tip/Person Formula = Total Tip Amount / Num of People
+
+function calcTotalPerPerson(){
+
+}
+
+calcBtn.addEventListener("click", calcTipAmount);
+calcBtn.addEventListener("click", calcTotalPerPerson);
